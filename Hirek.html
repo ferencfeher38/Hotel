@@ -1,0 +1,80 @@
+<!-- HTML szabvány megadása. -->
+<!DOCTYPE html>
+
+<!-- Nyelv megadása. -->
+<html lang = "hu">
+
+<!-- Head rész a megfelelő linkekkel (BETŰSTÍLUS, FORMÁZÁS, ICON). -->
+<head>
+    <title>Grand hotel Hungary</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Szántó Balázs, Fehér Ferenc Mátyás"/>
+    <meta name="keywords" content="Hotel, Szállás, Pihenés, Üdülés, Bár, Wellnes, Kikapcsolódás, Nyaralás"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Formazas.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Sen:700&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="hotel.jpg">
+</head>
+
+<!-- Body részekre bontva. -->
+<body>
+    <!-- Törzs rész -->
+    <div id="hirektörzs" class="törzs">
+    <!-- Az oldal legfelső része(HOTEL CÍM, HOTEL KÉP). -->
+    <header>
+        <div class="doboz_01">
+            <div class="cimdoboz"><h1 class="hotelcim">Grand Hotel Royal</h1></div>
+        </div>
+    </header>
+
+    <!-- Navigációs rész("csík"). -->
+    <nav>
+        <div class="navigacio">
+            <ul>
+                <li><a href="index.html"> Főoldal</a></li>
+                <li><a href="Elerhetoseg.html"> Elérhetőség</a></li>
+                <li><a href="Belepes.html"> Belépés</a></li>
+                <li><a href="Foglalas.html"> Foglalás</a></li>
+                <li><a class="aktualis" href="Hirek.html"> Hírek</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tartalom. -->
+    <main>
+        <h3 id="koszonto">Tisztelt Vendégeink!</h3>
+        <div id="hirdoboz">
+            <div class="hirkartya">
+                <p class="hirszoveg"><img class="hirkep" src="korhaz2.jpg" alt="korhaz">A nemrég Vuhan-ban kitört koronavírus járvány miatt az előző héten dolgozóink biztonsága és egészsége érdekében a hotelt határozatlan időre bezártuk. Az előző napokban pedig Budapest Önkormányzatával egyeztetve arra a döntésre jutottunk, hogy szállodánk egy részét ideiglenes kórházzá alakítjuk a betegek gyógyítása érdekében.</p>
+            </div>
+            <h4 class="datum">2020.03.27.</h4>
+            <hr/>
+            <div class="hirkartya">
+                <p class="hirszoveg"><img class="hirkep" src="korona2.jpg" alt="korona">A kínai Vuhan tartományból kitört vírus Magyarországra is elért, ezért vendégeink biztonsága érdekében az üzemeltetést felfüggesztjük, a foglalások pedig törlésre kerülnek, az előre befizetett összegek vissza lesznek térítve 20 napon belül.</p>
+            </div>
+            <h4 class="datum">2020.03.11.</h4>
+            <hr/>
+            <div class="hirkartya">
+                <p class="hirszoveg"><img class="hirkep" src="arengedmeny2.png" alt="arengedmeny">A mai naptól kezdve Hotelünk Vezetősége úgy döntött, hogy aki a következő 5 napban szobát foglal több, mint 2 éjszakára, 10%-os árengedményben részesül a teljes végösszegből.</p>
+            </div>
+            <h4 class="datum">2020.02.15.</h4>
+        </div>
+	</main>
+
+    <!-- Az oldal legalsó része (COPYRIGHT, IKONOK). -->
+    <footer>
+        <div class="ikonok">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copykesz">
+            <p class="keszitette">Készítette: Szántó Balázs & Fehér Ferenc Mátyás</p>
+            <p class="copyright">Copyright © Grand Hotel Royal 2020</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

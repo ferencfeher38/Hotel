@@ -1,0 +1,83 @@
+<!-- HTML szabvány megadása. -->
+<!DOCTYPE html>
+
+<!-- Nyelv megadása. -->
+<html lang = "hu">
+
+<!-- Head rész a megfelelő linkekkel (BETŰSTÍLUS, FORMÁZÁS, ICON). -->
+<head>
+    <title>Grand hotel Hungary</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Szántó Balázs, Fehér Ferenc Mátyás"/>
+    <meta name="keywords" content="Hotel, Szállás, Pihenés, Üdülés, Bár, Wellnes, Kikapcsolódás, Nyaralás"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Formazas.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Sen:700&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="hotel.jpg">
+</head>
+
+<!-- Body részekre bontva. -->
+<body>
+    <!-- Törzs rész -->
+    <div class="törzs">
+    <!-- Az oldal legfelső része(HOTEL CÍM, HOTEL KÉP). -->
+    <header>
+        <div class="doboz_01">
+            <div class="cimdoboz"><h1 class="hotelcim">Grand Hotel Royal</h1></div>
+        </div>
+    </header>
+
+    <!-- Navigációs rész("csík"). -->
+    <nav>
+        <div class="navigacio">
+            <ul>
+                <li><a class="aktualis" href="index.html"> Főoldal</a></li>
+                <li><a href="Elerhetoseg.html"> Elérhetőség</a></li>    
+                <li><a href="Belepes.html"> Belépés</a></li>
+                <li><a href="Foglalas.html"> Foglalás</a></li>
+                <li><a href="Hirek.html"> Hírek</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tartalom. -->
+    <main>
+        <h3 class="maincim">Aktuális</h3>
+        <div class="kartyadoboz">
+            <div class="kartya">
+                <a href="Hirek.html" target="_top"> <img src="korhaz.jpg" alt="korhaz"> </a>
+                <p class="mainszoveg">Tisztelt vendégeink! A hotelünket hamarosan átalakítjuk és kórházként fog üzemelni.</p>
+            </div>
+            <div class="kartya">
+                <a href="Hirek.html" target="_top"> <img src="korona.jpg" alt="korona"> </a>
+                <p class="mainszoveg">Tisztelt vendégeink! A hotelünk üzemeltetését további intézkedésekig felfüggesztjük.</p>
+            </div> <div class="kartya">
+                <a href="Hirek.html" target="_top"> <img src="arengedmeny.png" alt="arengedmeny"> </a>
+                <p class="mainszoveg">Tisztelt vendégeink! Ha most foglalnak szobát a júliusi hónapra, akkor a foglalás árából 10%-ot elengedünk!</p>
+            </div>
+        </div>
+        <h3 class="maincim">Galéria</h3>
+        <div class="mainkepekdoboz">
+            <div class="mainkepek">
+                <a href="Galeria.html" target="_top"> <img src="hotelszoba.jpg" alt="hotelszoba"> </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Az oldal legalsó része (COPYRIGHT, IKONOK). -->
+    <footer>
+        <div class="ikonok">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copykesz">
+            <p class="keszitette">Készítette: Szántó Balázs & Fehér Ferenc Mátyás</p>
+            <p class="copyright">Copyright © Grand Hotel Royal 2020</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

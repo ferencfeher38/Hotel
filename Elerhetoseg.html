@@ -1,0 +1,93 @@
+<!-- HTML szabvány megadása. -->
+<!DOCTYPE html>
+
+<!-- Nyelv megadása. -->
+<html lang = "hu">
+
+<!-- Head rész a megfelelő linkekkel (BETŰSTÍLUS, FORMÁZÁS, ICON). -->
+<head>
+    <title>Grand hotel Hungary</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Szántó Balázs, Fehér Ferenc Mátyás"/>
+    <meta name="keywords" content="Hotel, Szállás, Pihenés, Üdülés, Bár, Wellnes, Kikapcsolódás, Nyaralás"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Formazas.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Sen:700&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="hotel.jpg">
+</head>
+
+<!-- Body részekre bontva. -->
+<body>
+    <!-- Törzs rész -->
+    <div class="törzs">
+    <!-- Az oldal legfelső része(HOTEL CÍM, HOTEL KÉP). -->
+    <header>
+        <div class="doboz_01">
+            <div class="cimdoboz"><h1 class="hotelcim">Grand Hotel Royal</h1></div>
+        </div>
+    </header>
+
+    <!-- Navigációs rész("csík"). -->
+    <nav>
+        <div class="navigacio">
+            <ul>
+                <li><a href="index.html"> Főoldal</a></li>
+                <li><a class="aktualis" href="Elerhetoseg.html"> Elérhetőség</a></li>
+                <li><a href="Belepes.html"> Belépés</a></li>
+                <li><a href="Foglalas.html"> Foglalás</a></li>
+                <li><a href="Hirek.html"> Hírek</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tartalom. -->
+    <main>
+        <table>
+            <colgroup>
+                <col span="2"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th id="tablacim" colspan="2">Főbb elérhetőségeink</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tablaszoveg">Cím:</td>
+                    <td class="blokktartalom">3182 Karancslapujtő, Rákóczi út 40-2.</td>
+                </tr>
+                <tr>
+                    <td class="tablaszoveg">Telefon:</td>
+                    <td class="blokktartalom">06-30-676-7097</td>
+                </tr>
+                <tr>
+                    <td class="tablaszoveg">E-mail:</td>
+                    <td class="blokktartalom">grandhotelroyal@gmail.com</td>
+                </tr>
+                <tr>
+                    <th id="tablacim2" colspan="2">Térkép</th>
+                </tr>
+                <tr>
+                    <th colspan="2"><a href="https://www.google.com/maps/place/Karancslapujt%C5%91,+R%C3%A1k%C3%B3czi+%C3%BAt+40,+3182/@48.1531515,19.7239069,17z/data=!3m1!4b1!4m5!3m4!1s0x47400de26ed2b9fb:0x2a1944402879bafc!8m2!3d48.1531515!4d19.7260956?hl=hu" target="_blank"><img src="terkep.png" alt="terkep"></a>
+                </tr>   
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Az oldal legalsó része (COPYRIGHT, IKONOK). -->
+    <footer>
+        <div class="ikonok">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copykesz">
+            <p class="keszitette">Készítette: Szántó Balázs & Fehér Ferenc Mátyás</p>
+            <p class="copyright">Copyright © Grand Hotel Royal 2020</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

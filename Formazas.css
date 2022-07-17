@@ -1,0 +1,662 @@
+/*FŐOLDAL és ALAP formázása */
+/* HTML, BODY formázása */
+* {
+    font-family: 'Sen', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: darkslategray;
+}
+
+/*TÖRZS formázása */
+.törzs {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    border-bottom-right-radius: 5px;    
+    border-bottom-left-radius: 5px;
+    background-color: white;
+}
+
+/* HEADER formázása */
+.doboz_01 {
+    background-image: url("hotel.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* NAV formázása */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navigacio {
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+
+}
+.navigacio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.navigacio a {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigacio a:hover {
+    background-color: rgb(77, 77, 77);
+    transition: 0.5s;
+}
+
+.navigacio li {
+    display: inline-block;
+}
+
+.hotelcim {
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    text-shadow: black 4px 4px 4px;
+    animation: hotelcimbeuszas 2.5s;
+}
+
+@keyframes hotelcimbeuszas {
+    from {top: -50px; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+}
+
+.aktualis {
+    background-color: rgb(77, 77, 77);
+}
+
+.cimdoboz {
+    background-color: rgba(89, 89, 89, 0.4)
+}
+
+/* MAIN formázása */
+.maincim {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    color: white;
+    width: 10%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 5px;
+    background-color: rgb(128, 128, 128);
+    animation: maincimbeuszas 2s;
+}
+
+@keyframes maincimbeuszas {
+    from {left: -50%; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+
+.kartyadoboz {
+    margin: auto;
+    text-align: center;
+}
+
+.kartya {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    animation: kartyamegjelenes 3s;
+}
+
+@keyframes kartyamegjelenes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.kartya:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+.kartya img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.mainkepekdoboz {
+    margin: auto;
+    text-align: center;
+}
+
+.mainkepek {
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    animation: mainkepekmegjelenes 3s;
+}
+
+@keyframes mainkepekmegjelenes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.mainkepek img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mainkepek:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+.mainszoveg::first-letter {
+    font-size: 20px;
+}
+
+.mainszoveg {
+    color: darkslategray;
+}
+
+/* Görgetés */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+/* Kijelölés */
+::selection{
+    background-color: grey;
+}
+
+/* FOOTER formázása */
+footer {
+    margin-top: 80px;
+    background-color: rgb(128, 128, 128);
+    height: 200px;
+}
+
+.ikonok {
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.copykesz {
+    color: white;
+    text-align: center;
+}
+
+/* MEDIA QUERRY-K */
+@media screen and (max-width: 750px){
+    .navigacio li {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* ELERHETOSEG FORMAZASA */
+/* MAIN formázása */
+table {
+    margin: auto;
+    margin-top: 50px;
+    height: auto;
+    width: 70%;
+    border:  rgb(128, 128, 128) solid 2px;
+    border-collapse: collapse;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    animation: tablamegjelenes 2.5s;
+}
+
+@keyframes tablamegjelenes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+table th[id] {
+    background-color: rgb(128, 128, 128);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+table tr td,th[class] {
+    color: rgb(128, 128, 128);
+    border-bottom: rgb(128, 128, 128) solid 2px;
+    padding: 20px;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}   
+
+table tr td:nth-child(2) {
+    color: black;
+    text-align: left;
+}
+
+/* BELEPES/REGISZTRÁCIÓ formázása */
+.belepdoboz {
+    margin-top: 50px;
+    text-align: center;
+}
+.belepkartya {
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    text-align: right;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    animation: belepkartyamegjelenes 2.5s;
+}
+
+@keyframes belepkartyamegjelenes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+legend {
+    text-align: center;
+    background-color: rgb(128, 128, 128);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+label {
+    color: black;
+    display: block;
+    padding-bottom: 5px;
+}
+
+fieldset {
+    border: none;
+    padding: 20px;
+}
+
+#regisztracio {
+    color: grey;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#regisztlink {
+    color:black;
+}
+
+/* HÍREK formázása */
+#hirdoboz {
+    margin: auto;
+    text-align: center;
+}
+
+.hirszoveg {
+    margin: 0;
+    color: darkslategray;
+    text-align: justify;
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.hirszoveg::first-letter {
+    font-size: 20px;
+}
+
+.hirkep {
+    float: left;
+    margin-right: 10px;
+}
+
+.hirkartya {
+    height: auto;
+    width: 49%;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    animation: hirkartyamegjelenes 3s;
+}
+
+@keyframes hirkartyamegjelenes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#koszonto {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    color: white;
+    width: 20%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 5px;
+    background-color: rgb(128, 128, 128);
+    animation: hircimbeuszas 2s;
+}
+
+@keyframes hircimbeuszas {
+    from {left: -50%; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+
+.datum {
+    margin-bottom: 50px;
+    color: grey;
+    animation: datummegjelenes 3s;
+}
+
+@keyframes datummegjelenes {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+#hirektörzs {
+    background: linear-gradient(-90deg, rgb(165, 165, 165), white, white, white, white, white, rgb(156, 156, 156));
+}
+
+/* FOGLALÁS formázása */
+#foglalas {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* GALÉRIA formázása */
+#kepekdoboz {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 150px;
+    text-align: center;
+}
+#kep1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep1.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep2.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep3.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep4.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep5 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep5.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep6 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep6.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep7 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep7.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep8 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep8.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#kep9 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("kep9.jpg");
+    height: 262px;
+    width: 400px;
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px grey;
+}
+
+#galeriacim {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    color: white;
+    width: 10%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding: 5px;
+    background-color: rgb(128, 128, 128);
+    animation: galeriacimbeuszas 2s;
+}
+
+@keyframes galeriacimbeuszas {
+    from {left: -50%; opacity: 0;}
+    to {left: 0; opacity: 1;}
+}
+
+a {
+    color:white;
+}
+
+.kep:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    width: 700px;
+    height: 700px;
+}
+
+/* NYOMTATÁSI KÉP formázása */
+@media print {
+    .hirkep{
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hirszoveg {
+        text-align: justify;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    .hotelcim {
+        padding: 0;
+        text-shadow: none;
+        color: black;
+        width: auto;
+    }
+
+    .hirkartya {
+        box-shadow: none;
+        width: auto;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .törzs {
+        width: auto;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    
+    .doboz_01 {
+        height: 0%;
+    }
+
+    .cimdoboz {
+        height: 0%;
+    }
+
+    #koszonto {
+        width: auto;
+        text-align: center;
+        border-radius: none;
+        box-shadow: none;
+        color: black;
+        margin: 20px;
+        padding: 0;
+        background-color: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@page {
+    margin: 2cm;
+}
